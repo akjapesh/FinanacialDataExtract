@@ -1,0 +1,60 @@
+==========================================
+SLURM_CLUSTER_NAME = param-shakti
+SLURM_JOB_ACCOUNT = niloycs
+SLURM_JOB_ID = 514105
+SLURM_JOB_NAME = CasRel
+SLURM_JOB_NODELIST = gpu017
+SLURM_JOB_USER = 20cs71p01
+SLURM_JOB_UID = 6636
+SLURM_JOB_PARTITION = gpu
+SLURM_TASK_PID = 188301
+SLURM_SUBMIT_DIR = /home/20cs71p01/financial/relation_extraction/baselines/relational_extract
+SLURM_CPUS_ON_NODE = 10
+SLURM_NTASKS = 1
+SLURM_TASK_PID = 188301
+==========================================
+
+The following have been reloaded with a version change:
+  1) compiler/cuda/10.0 => compiler/cuda/10.1
+
+Tue Oct 19 19:31:55 2021       
++-----------------------------------------------------------------------------+
+| NVIDIA-SMI 465.19.01    Driver Version: 465.19.01    CUDA Version: 11.3     |
+|-------------------------------+----------------------+----------------------+
+| GPU  Name        Persistence-M| Bus-Id        Disp.A | Volatile Uncorr. ECC |
+| Fan  Temp  Perf  Pwr:Usage/Cap|         Memory-Usage | GPU-Util  Compute M. |
+|                               |                      |               MIG M. |
+|===============================+======================+======================|
+|   0  NVIDIA Tesla V1...  Off  | 00000000:5E:00.0 Off |                    0 |
+| N/A   30C    P0    34W / 250W |      0MiB / 16160MiB |      0%      Default |
+|                               |                      |                  N/A |
++-------------------------------+----------------------+----------------------+
+|   1  NVIDIA Tesla V1...  Off  | 00000000:86:00.0 Off |                    0 |
+| N/A   39C    P0    37W / 250W |      0MiB / 16160MiB |      2%      Default |
+|                               |                      |                  N/A |
++-------------------------------+----------------------+----------------------+
+                                                                               
++-----------------------------------------------------------------------------+
+| Processes:                                                                  |
+|  GPU   GI   CI        PID   Type   Process name                  GPU Memory |
+|        ID   ID                                                   Usage      |
+|=============================================================================|
+|  No running processes found                                                 |
++-----------------------------------------------------------------------------+
+Python 3.8.10
+nvcc: NVIDIA (R) Cuda compiler driver
+Copyright (c) 2005-2019 NVIDIA Corporation
+Built on Fri_Feb__8_19:08:17_PST_2019
+Cuda compilation tools, release 10.1, V10.1.105
+Traceback (most recent call last):
+  File "run.py", line 2, in <module>
+    from data_loader import data_generator, load_data
+  File "/home/20cs71p01/financial/relation_extraction/baselines/relational_extract/data_loader.py", line 2, in <module>
+    import numpy as np
+ModuleNotFoundError: No module named 'numpy'
+Traceback (most recent call last):
+  File "run.py", line 2, in <module>
+    from data_loader import data_generator, load_data
+  File "/home/20cs71p01/financial/relation_extraction/baselines/relational_extract/data_loader.py", line 2, in <module>
+    import numpy as np
+ModuleNotFoundError: No module named 'numpy'
